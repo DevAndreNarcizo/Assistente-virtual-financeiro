@@ -10,7 +10,7 @@ const investmentTypes = [
   { value: 'mutual_fund', label: 'Mutual Fund' },
   { value: 'bond', label: 'Bond' },
   { value: 'other', label: 'Other' }
-] as const;
+];
 
 const InvestmentsScreen = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
