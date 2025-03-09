@@ -94,21 +94,25 @@ const BudgetScreen = () => {
               </Text>
             </View>
             <View style={styles.budgetActions}>
-              <Button
-                icon="pencil"
-                mode="text"
-                onPress={() => {
-                  setSelectedCategory(category);
-                  setCategoryName(category.name);
-                  setBudgetLimit(category.limit.toString());
-                  setIsModalVisible(true);
-                }}
-              />
-              <Button
-                icon="delete"
-                mode="text"
-                onPress={() => handleDeleteCategory(category.id)}
-              />
+<Button
+  icon="pencil"
+  mode="text"
+  onPress={() => {
+    setSelectedCategory(category);
+    setCategoryName(category.name);
+    setBudgetLimit(category.limit.toString());
+    setIsModalVisible(true);
+  }}
+>
+  Edit
+</Button>
+<Button
+  icon="delete"
+  mode="text"
+  onPress={() => handleDeleteCategory(category.id)}
+>
+  Delete
+</Button>
             </View>
           </View>
 
